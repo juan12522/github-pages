@@ -1,0 +1,23 @@
+public class Main  {
+    public static String esMultiplo(int num1, int num2) {
+        if (num2 == 0) {
+            return "Error: División por cero"; // Manejo de error
+        }
+        if (num1 % num2 == 0) {
+            return num1 + " es múltiplo de " + num2;
+        } else if (num2 % num1 == 0) {
+            return num2 + " es múltiplo de " + num1;
+        } else {
+            return "Ninguno es múltiplo del otro";
+        }
+    }
+
+    public static void main(String[] args) {
+        // Ejemplos de uso
+        System.out.println(esMultiplo(7919, 2));
+        System.out.println(esMultiplo(840, 210));
+        System.out.println(esMultiplo(678223072, 23));
+        System.out.println(esMultiplo(1299827, 104729));
+        System.out.println(esMultiplo(104728, 13));
+    }
+}
